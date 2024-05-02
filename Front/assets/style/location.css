@@ -1,7 +1,8 @@
 
 body{
-    background-image: url(../img/Challenger850.png) ;
+    background-image: url(../img/jetskyee.jpg) ;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -10,7 +11,7 @@ body{
 
 
 .nav1 {
-    background-color: rgba(4, 217, 236, 0.282); 
+    background-color: rgba(4, 217, 236, 0.315); 
     padding: 10px 0; 
     border-radius: 15px;
 }
@@ -42,22 +43,37 @@ body{
     margin-right: 5px;
 }
 
-
-.jets {
+.jets{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px;
+    justify-content: center;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
+
+.jet:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 .jet {
     width: 200px;
     margin: 20px;
     text-align: center;
+    background-image: url(../img/XFbw.gif );
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 19px 18px black
 }
+
 .jet img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
+
 .jet button {
     background-color: #4CAF50;
     border: none;
@@ -69,6 +85,7 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 
