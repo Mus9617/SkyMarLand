@@ -1,0 +1,95 @@
+    <!--
+        This HTML file represents the location page of the SkyMarLand website.
+        It contains the layout and content for displaying available jets for rent.
+
+        The file structure is as follows:
+        - The document starts with the DOCTYPE declaration and the opening <html> tag.
+        - The <head> section contains meta information, links to CSS stylesheets, and a script for handling rent information.
+        - The <body> section contains the header, main content, and footer of the page.
+        - The header includes a navigation bar with links to different pages of the website.
+        - The main section displays a list of jets available for rent, each with an image, title, and a button for more information.
+        - The <h2> heading displays the title for the rent information section.
+        - The <div> with class "price" is a placeholder for displaying the rent prices.
+        - The <a> tag with href "createarticle.html" is a link to the create article page.
+        - The <button> with class "hidden btnbooking" triggers a function to show the rent bookings.
+        - The <div> with class "price booking" is a placeholder for displaying the rent bookings.
+
+        Note: The file path for this document is "/home/mous/Documents/SimplonDev/BriefMysql/SkyMarLand/Front/assets/src/location.html".
+    -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../img/skymarland.png" type="SkyMarLand">
+        <link rel="stylesheet" href="../style/location.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/showrents.js" defer></script>
+        <title>Location SkyMarLand</title>
+        
+    </head>
+    <body>
+        
+      <header class="nav1">
+            <nav class="nav2">
+                <a href="./../../index.html"> <img src="../img/home.png" alt="Home SkyMarLand" height="15px" class="logonav">Acceuill</a>
+                <a href="location.html"> <img src="../img/rent.png" alt="Rent SkyMarLand" height="15px" class="logonav">Location</a>
+                <a href="login.html"> <img src="../img/login.png" alt="Login SkyMarLand" height="15px" class="logonav"> Login/Register</a>
+                <a href="contact.html"> <img src="../img/contactmail.png" alt="Contact SkyMarLand" height="15px" class="logonav">Contact</a>
+                <a href="createarticle.html">Create</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="jets">
+                <div class="jet">
+                    <img src="../img/pc24.jpg" alt="Jet 1"> 
+                    <h3>JThe Pliatus PC-24</h3>
+                    <button onclick="location.href='./view/pc24.html'">More Info</button>
+                </div>
+                <div class="jet">
+                    <img src="../img/cessna-citation-cj4-1.avif" alt="Jet 2">
+                    <h3>CESSNA CITATION CJ4</h3>
+                    <button onclick="location.href='./view/Cj4.html'">More Info</button>
+                </div>
+                <div class="jet">
+                    <img src="../img/cessna182.jpg" alt="Jet 1"> 
+                    <h3>CESSNA 182</h3>
+                    <button onclick="location.href='./view/ces182t.html'">More Info</button>
+                </div>
+                <div class="jet">
+                    <img src="../img/Challenger850.png" alt="Jet 1">  
+                    <h3>CHALLENGER 850</h3>
+                    <button onclick="location.href='./view/chall850.html'">More Info</button>
+                </div>
+                <div class="jet">
+                    <img src="../img/P2008.jpg" alt="Jet 1"> 
+                    <h3>TECNAM P2008</h3>
+                    <button onclick="location.href='./view/tcp2008.html'">More Info</button>
+                </div>
+            </section>
+        </main>
+
+   <h2 class="rr">RENT INFORMATION <img src="../img/airplane-drawn-flight-svgrepo-com.svg" alt="SkyMarLand" height="25px" width="25px"></h2>
+    
+
+
+
+        <div class="price">
+          
+
+
+            
+    
+        </div>
+     <a href="createarticle.html"><center> <button  class="hidden test">CREATE</button></center></a>  
+     <center> <button  class="hidden btnbooking"  onclick="showbooking()">Show Rent's</button></center>
+
+
+        </div>
+
+
+     <div class="price booking"></div>
+
+</body></footer>
+</html>

@@ -1,0 +1,62 @@
+<!--
+This HTML file represents the registration page of the SkyMarLand website.
+It contains a form for users to sign up with their name, last name, country, email, phone number, and password.
+The page also includes a navigation bar with links to the home page, rental page, login/register page, and contact page.
+The registration form has two tabs for signing in and signing up, with the sign up tab being active by default.
+The form includes input fields for the user's name, last name, country, email, phone number, and password.
+There is also a "Log In" button to submit the form.
+The page includes a "Forgot Password?" link for users who have forgotten their password.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/skymarland.png" type="SkyMarLand">
+    <link rel="stylesheet" href="../style/login.css">
+  
+    <title>Login</title>
+    
+    
+</head>
+
+<body>
+    
+    <header class="nav1">
+        <nav class="nav2">
+            <a href="./../../index.html"> <img src="../img/home.png" alt="Home SkyMarLand" height="15px" class="logonav">Acceuill</a>
+            <a href="#"> <img src="../img/rent.png" alt="Rent SkyMarLand" height="15px" class="logonav">Location</a>
+            <a href="login.html" onclick="register()"> <img src="../img/login.png" alt="Login SkyMarLand" height="15px" class="logonav"> Login/Register</a>
+            <a href="contact.html"> <img src="../img/contactmail.png" alt="Contact SkyMarLand" height="15px" class="logonav">Contact</a>
+        </nav>
+    </header>
+
+    
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+            
+            <div class="fadeIn first">
+                <img src="../img/skymarland.png" id="icon" alt="User Icon" />
+            </div>
+        
+            
+            <div>
+                <label for="datestart">
+                    <input type="date"  id="datestart" class="fadeIn third" name="datestart" placeholder="Plane Type">
+                </label>
+                <label for="dateend">
+                    <input type="date" id="dateend" class="fadeIn third" name="dateend" placeholder="Name Model">
+                </label>
+                </label>
+                <input type="submit" class="fadeIn fourth" value="register" onclick="createbooking()">
+            </div>
+        
+        
+        </div>
+    </div>
+
+</body>
+<script  src="../js/createbooking.js"></script>
+</html>

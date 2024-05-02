@@ -1,0 +1,92 @@
+<!--
+This HTML file represents the login page of the SkyMarLand website.
+
+It contains the following elements:
+- Meta tags for character encoding and viewport settings.
+- Link tags for the favicon, CSS stylesheets, and external fonts.
+- Header section with a navigation bar.
+- Main content section with a login form.
+- Footer section with a link for password recovery.
+
+The structure of the HTML code is as follows:
+- The doctype declaration specifies the HTML version and language.
+- The head section includes the title of the page and external resources.
+- The body section contains the header, main content, and footer.
+
+Note: Some parts of the code are commented out and not currently displayed on the page.
+
+Author: [Mus]
+Date: [26/04/2024]
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/skymarland.png" type="SkyMarLand">
+  
+ 
+  <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+  <script src="../js/login.js"></script>
+  
+  <title>Login SkyMarLand</title>
+</head>        
+<body>
+  
+  <header class="nav1">
+    <nav class="nav2">
+      <a href="../../index.html">
+        <img src="../img/home.png" alt="Home SkyMarLand" height="15px" class="logonav">
+        Acceuill
+      </a>
+      <a href="#">
+        <img src="../img/rent.png" alt="Rent SkyMarLand" height="15px" class="logonav">
+        Location
+      </a>
+      <a href="#">
+        <img src="../img/login.png" alt="Login SkyMarLand" height="15px" class="logonav">
+        Login/Register
+      </a>
+      <a href="contact.html">
+        <img src="../img/contactmail.png" alt="Contact SkyMarLand" height="15px" class="logonav">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+ 
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      
+      <a href="login.html"><h2 class="active"> Sign In </h2></a>
+      <a href="register.html"><h2 class="inactive underlineHover">Sign Up</h2></a>
+
+      
+      <div class="fadeIn first">
+        <img src="../img/skymarland.png" id="icon" alt="User Icon" />
+      </div>
+
+      
+      <div id="login_form">
+        <label for="login">
+          <input type="email" id="login" class="fadeIn second" name="login" placeholder="login">
+        </label>
+        <label for="password">
+          <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+        </label>
+        <input type="submit" class="fadeIn fourth" value="Log In" onclick="login()">
+      </div>
+      </div>
+
+      
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

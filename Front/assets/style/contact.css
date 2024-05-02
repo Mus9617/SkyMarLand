@@ -1,0 +1,116 @@
+
+body{
+    background-image: url(../img/jetfigher.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+   
+}
+
+
+
+
+
+.nav1 {
+    background-color: rgba(4, 216, 236, 0.2); 
+    padding: 10px 0; 
+    border-radius: 15px;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center; 
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 20px; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav2 a:hover {
+    background-color: maroon; 
+    color: white; 
+}
+
+.logonav{
+    margin-right: 5px;
+}
+
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background-color: #08c2da50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+
+.logo33{
+    display: flex;
+    height: 210px;
+    width: 210px;
+}
+
+.jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
