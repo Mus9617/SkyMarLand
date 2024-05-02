@@ -10,7 +10,7 @@
 
 SkyMarLand is a web application designed to provide a seamless experience for booking private jets. It allows users to browse through a variety of jets, view their specifications, and book them for specific dates. The application is built with a focus on user-friendliness, ensuring that even first-time users can easily navigate through the platform and make a booking. 
 
-The backend of SkyMarLand is built with Node.js and Express, providing a robust and scalable infrastructure. The frontend is designed with Puere HTML,CSS. The application also integrates with a SQL database to store and manage booking data.
+The backend of SkyMarLand is built with Node.js and Express, providing a robust and scalable infrastructure. The frontend is designed with Pure HTML,CSS. The application also integrates with a SQL database to store and manage booking data.
 
 Whether you're a frequent flyer or planning your first private jet experience, SkyMarLand aims to make the process as simple and enjoyable as possible.
 
