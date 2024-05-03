@@ -31,11 +31,9 @@ async function sendEmail() {
         const result = await response.json();
         console.log(result);
 
-        if (result.status === 200) {
+        
             alert('Email Sent');
-        } else {
-            alert('Email Not Sent');
-        }
+       
     } catch (error) {
         console.log(error);
     }
