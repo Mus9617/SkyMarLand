@@ -34,7 +34,7 @@ Date: [26/04/2024]
 
     <div class="container">
         <h1>Contact SkyMarLand</h1>
-        <form action="#" method="POST">
+            <div class="foro">
             <label for="profession">Profession:</label>
             <input type="text" id="profession" name="profession" required>
             
@@ -53,8 +53,10 @@ Date: [26/04/2024]
             <input type="checkbox" id="cgu" name="cgu" required>
             <label for="cgu">J'accepte les termes et conditions</label>
             
-            <button type="submit">Envoayer</button>
-        </form>
+            <button onclick="sendEmail()">Envoayer</button>
+        </div>
     </div>
 </body>
+
+<script src="../js/sendemail.js"></script>
 </html>

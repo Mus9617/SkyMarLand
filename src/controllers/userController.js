@@ -89,25 +89,30 @@ const login = async (req, res) => {
 }
 
 
-
-
-
-
+/**
+ * Sends a test email with the provided information.
+ *
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @returns {Promise<void>} - A promise that resolves when the email is sent.
+ */
 const testEmail = async (req, res) => {
+    const profession = req.body.profession;
+    const email = req.body.email;
+    const phone = req.body.phone;
+    const country = req.body.country;
+    const message = req.body.date;
+
     const info = await transporter.sendMail({
-      from: `${process.env.SMTP_EMAIL}`,
-      to: 'speede078@gmail.com',
-      subject: 'Hello ✔ give',
-      text: 'Hello world?',
-      html: '<b>Hello world?</b>',
-    })
-  
-    console.log('Message sent: %s', info.messageId)
-    res.status(200).json(`Message send with the id ${info.messageId}`)
-  }
+        from: `${process.env.SMTP_EMAIL}`,
+        to: `${email}`,
+        subject: 'Contact SkyMarLand',
+        text: 'Need Help?',
+        html: `<b>Profession: ${req.body.profession}</b>` + `<br>` + `<b>Email: ${req.body.email}</b>` + `<br>` + `<b>Phone: ${req.body.phone}</b>` + `<br>` + `<b>Country: ${req.body.country}</b>` + `<br>` + `<b>Meeting Date: ${req.body.date}</b>`,
+    });
 
+    console.log('Message sent: %s', info.messageId);
+    res.status(200).json(`Message send with the id ${info.messageId}`);
+};
 
-
-
-
-module.exports = { createUser, login, testEmail}
+module.exports = { createUser, login, testEmail };

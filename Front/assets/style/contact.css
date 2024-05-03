@@ -8,6 +8,13 @@ body{
 }
 
 
+.foro{
+    display: flex;
+    flex-direction: column;
+ 
+   
+}
+
 
 
 

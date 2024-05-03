@@ -30,7 +30,7 @@ router.route("/register").post(createUser);
  */
 router.route("/login").post(login);
 
-router.get('/email', testEmail);
+router.post('/email', testEmail);
 
   
 
