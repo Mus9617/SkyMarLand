@@ -14,6 +14,9 @@ The backend of SkyMarLand is built with Node.js and Express, providing a robust 
 
 Whether you're a frequent flyer or planning your first private jet experience, SkyMarLand aims to make the process as simple and enjoyable as possible.
 
+## Project
+You can find the project board for SkyMarLand [here](https://github.com/users/Mus9617/projects/3). The project board provides an overview of the tasks and progress of the project, allowing you to stay up-to-date with the development process.
+
 ## Table of Contents
 
 - [Installation](#installation)
